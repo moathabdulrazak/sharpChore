@@ -33,6 +33,11 @@ public class Startup
 
     services.AddScoped<AccountsRepository>();
     services.AddScoped<AccountService>();
+
+
+    services.AddTransient<ChoreRepository>();
+    services.AddTransient<ChoreService>();
+
   }
 
   private void ConfigureCors(IServiceCollection services)

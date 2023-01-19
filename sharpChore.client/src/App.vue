@@ -2,12 +2,10 @@
   <header>
     <Navbar />
   </header>
-  <main>
+  <main class="bg-vfx">
     <router-view />
   </main>
-   <footer class="bg-dark text-light">
-    Made with 💖 by CodeWorks
-  </footer>
+
 </template>
 
 <script>
@@ -27,10 +25,13 @@ export default {
 <style lang="scss">
 @import "./assets/scss/main.scss";
 
-:root{
+:root {
   --main-height: calc(100vh - 32px - 64px);
 }
 
+.bg-vfx {
+  background-image: url("https://ecommerce-platforms.com/wp-content/uploads/2013/12/15-icon-patterns-1549495017.jpg");
+}
 
 footer {
   display: grid;
